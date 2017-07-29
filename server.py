@@ -6,8 +6,6 @@ app = Flask(__name__)
 app.secret_key = os.environ['SECRET_KEY']
 
 
-
-
 @app.route('/')
 def main():
     return render_template('main.html')
@@ -15,14 +13,13 @@ def main():
 
 @app.route('/send_text', methods=['POST'])
 def send_text():
-
     phone = request.form.get("phone")
     text = request.form.get("message")
 
-    message = client.api.account.messages.create(
-        to="+15106840288",
+    # send text
+    client.api.account.messages.create(
+        to=phone,
         from_="+15103451264",
         body=text)
 
     return redirect('/')
-

@@ -3,6 +3,7 @@
   <head>
     <title>fake fone... who dis</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="/static/img/phone.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
   </head>
 
@@ -11,9 +12,10 @@
       <div></div>
       <div id="wrapper">
         <div>
-          <form action="/send_text" method="POST" class="form-text">
+          <form id="form" action="/send_text" method="POST" class="form-text">
             <div>
               <input
+                id="phone"
                 type="text"
                 name="phone"
                 required
@@ -26,11 +28,11 @@
                 required
                 placeholder="hi from my fake fone"
                 rows="4"
-                class="form-control rounded-none">
-              </textarea>
+                class="form-control rounded-none"></textarea>
             </div>
             <div>
               <input
+                id="form-submit"
                 type="submit"
                 value="send text"
                 class="btn btn-primary btn-block rounded-bottom">
@@ -40,6 +42,6 @@
       </div>
       <div></div>
     </div>
-
+    <script src="/static/js/main.js"></script>
   </body>
 </html>
