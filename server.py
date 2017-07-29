@@ -23,3 +23,7 @@ def send_text():
         body=text)
 
     return redirect('/')
+
+
+if __name__ == "__main__":
+    app.run()
