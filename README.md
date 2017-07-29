@@ -34,4 +34,4 @@ http://fake-fone.herokuapp.com/
 
 # Screenshot
 
-![screnshot](https://github.com/janet/fake_fone/static/img/screenshot.png "Fake phone... who dis")
+![screnshot](https://github.com/janet/fake_fone/blob/master/static/img/screenshot.png "Fake phone... who dis")
